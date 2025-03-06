@@ -1,0 +1,177 @@
+/* General Footer Styles */
+.footer {
+    background: linear-gradient(135deg, #e6b800, #333);  /* Gradient background from golden to black */
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 250px;
+  }
+  
+  .footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #e6b800;  /* Golden color for section headers */
+    font-weight: bold;
+  }
+  
+  .footer-section p, .footer-section ul {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 10px 0;
+  }
+  
+  .footer-section a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer-section a:hover {
+    color: #e6b800;  /* Change text color to golden on hover */
+    text-decoration: underline;
+    transform: scale(1.05);  /* Slight scale effect on hover */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  
+  .footer-bottom p {
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+    opacity: 0.7;
+  }
+  
+  /* Social Media Links Styling */
+  .social-links {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social-links li {
+    margin: 0 15px;
+  }
+  
+  .social-icon {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #e6b800;  /* Golden color for social icons on hover */
+    transform: scale(1.2);  /* Scale effect to highlight icons */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      text-align: center;
+      margin: 10px 0;
+    }
+  }
+  
+  /* Hover effects for the Quick Links */
+  .footer-section ul li a:hover {
+    color: #e6b800;
+    text-decoration: underline;
+  }
+  /* Highlight the Donate Now Link */
+.donate-link {
+    color: #e6b800;  /* Golden color */
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .donate-link:hover {
+    color: #ffcc00; /* Slightly lighter golden when hovered */
+  }
+  
+  /* Scanner Popup Styles */
+  .scanner-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .scanner-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e6b800;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .close-btn:hover {
+    background: #ffcc00;
+  }
+  
+  /* Confirmation after scan */
+  .scan-confirmation {
+    margin-top: 20px;
+  }
+  
+  .scan-confirmation button {
+    background-color: #e6b800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .scan-confirmation button:hover {
+    background-color: #ffcc00;
+  }
+  

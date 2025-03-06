@@ -1,0 +1,245 @@
+/* Home.css */
+/* Hero Section */
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  background-image: url('./image/R.jpg'); /* Add the path to your background image */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  padding: 120px 0; /* Increases padding to make space for the content */
+  color: white; /* Changes the text color to white for contrast */
+  position: relative;
+  overflow: hidden; /* Ensures the content doesn't overflow the boundaries */
+}
+
+/* Adding a semi-transparent overlay for text readability */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+/* Heading Style */
+.hero-section h1 {
+  font-size: 4.5em; /* Bigger font for the heading */
+  font-family: 'Roboto', sans-serif; /* Customize with a clean, modern font */
+  color: #fff; /* White color for heading */
+  margin-bottom: 20px; /* Adds space between title and description */
+  z-index: 2; /* Makes sure the heading stays on top of the overlay */
+  font-weight: 700; /* Makes the heading bold */
+  text-transform: uppercase; /* Optional: Capitalize for emphasis */
+  letter-spacing: 2px; /* Adds a bit of spacing between the letters */
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Paragraph Style */
+.hero-section p {
+  font-size: 1.8em; /* Larger description text */
+  color: #fff; /* White color for paragraph */
+  z-index: 2; /* Ensures it stays on top of the overlay */
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; /* Normal weight for the description */
+  animation: fadeInUp 1.5s ease-out;
+}
+
+/* Button Style */
+.hero-section button {
+  padding: 15px 30px;
+  background-color: #E6B800; /* A rich, warm yellow that fits with a cultural theme */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  border-radius: 50px; /* Gives the button rounded pill shape */
+  z-index: 2; /* Ensures the button is visible on top of the overlay */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: fadeInUp 2s ease-out;
+}
+
+/* Button Hover Effect */
+.hero-section button:hover {
+  background-color: #c59400; /* Darker shade for hover effect */
+  transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+  .hero-section h1 {
+      font-size: 3em; /* Smaller heading size for mobile */
+  }
+
+  .hero-section p {
+      font-size: 1.2em; /* Smaller paragraph text for mobile */
+  }
+
+  .hero-section button {
+      font-size: 1.2em; /* Slightly smaller button on mobile */
+  }
+}
+
+/* About Section */
+.about-section {
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: #FFEB3B; /* Yellow background */
+  padding: 30px 15px; /* Add padding for better spacing */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.about-section h2 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  color: #F57F17; /* Dark Yellow color for heading */
+  font-family: 'Arial', sans-serif; /* Clean modern font */
+  text-transform: uppercase; /* Capitalized heading */
+  font-weight: bold;
+  letter-spacing: 1px; /* Slight letter spacing */
+}
+
+.about-section p {
+  font-size: 1.2em;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #F57F17; /* Dark Yellow for the text */
+  line-height: 1.6; /* Improve readability */
+  font-family: 'Georgia', serif; /* Elegant serif font for text */
+  text-align: justify; /* Justify the paragraph for a cleaner look */
+}
+
+.about-section p:hover {
+  color: #FBC02D; /* Light Yellow when hovered */
+  transition: color 0.3s ease;
+}
+
+/* Optional: Add shadow to the text for depth */
+.about-section h2, .about-section p {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* subtle shadow */
+}
+
+/* Optional: Add a border or subtle effect for the section */
+.about-section {
+  border: 1px solid #F57F17; /* Dark yellow border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow around the section */
+}
+
+.community-members-section {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.community-members-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.members-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.member {
+  text-align: center;
+  max-width: 200px;
+}
+
+.member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.member h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.member p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Image Slider Section */
+.image-slider-section {
+    text-align: center;
+    padding: 20px 0; /* Reduced padding to remove extra space */
+    margin: 0; /* Removes any margin around the section */
+  }
+  
+  .image-slider-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px; /* Reduced bottom margin */
+  }
+  
+  .slick-dots {
+    bottom: 10px;
+  }
+  
+  .slick-dots li button:before {
+    color: #007BFF;
+  }
+  
+  .slick-prev, .slick-next {
+    color: #007BFF;
+  }
+  
+  .slider-item img {
+    width: 100%; /* Ensures the image takes up the full width of the container */
+    height: 400px; /* Keeps the height consistent */
+    object-fit: cover; /* Makes sure the image covers the area without distortion */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Removes any margin around the images */
+  }
+  .events-news-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .events-section, .news-section {
+    width: 48%; /* Adjust the width to fit your design */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .events-section h2, .news-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .event-item, .news-item {
+    margin-bottom: 15px;
+  }
+  
+  .event-item h3, .news-item h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .event-item p, .news-item p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
